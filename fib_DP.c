@@ -2,10 +2,12 @@
 #include<math.h>
 
 void main(){
-int n;
+int t,n;
+scanf("%d",&t);
+while(t>0){
 scanf("%d",&n);
 int fib[n];
-fib[0]=0;
+fib[0]=1;
 fib[1]=1;
 long long int fib_ans=1;
 for(int i=2;i<n;i++){
@@ -19,4 +21,6 @@ printf("%d ",fib[j]);
 
 printf("%llu",fib_ans);
 printf("\n");
+t--;
+}
 }
